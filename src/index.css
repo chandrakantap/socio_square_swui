@@ -65,4 +65,7 @@ body {
   .residentList li {
     @apply pl-4 border-l-2 border-l-green-600 mb-4;
   }
+  .badge {
+    @apply bg-green-600 rounded-md w-8 flex justify-center;
+  }
 }

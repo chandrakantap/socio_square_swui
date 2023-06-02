@@ -24,8 +24,11 @@ function PlanetList() {
           <ul className="max-w-lg ml-auto">
             {planets.results.map((planet) => (
               <li className="listitem" key={planet.name}>
-                <NavLink className="block" to={`/${planet.name}`}>
-                  {planet.name}
+                <NavLink className="flex justify-between pr-4" to={`/${planet.name}`}>
+                  <p>{planet.name}</p>
+                  {planet?.residents?.length > 0 && (
+                    <p className="badge">{planet?.residents?.length}</p>
+                  )}
                 </NavLink>
               </li>
             ))}
