@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import PlanetList from './planet/PlanetList';
 import PlanetResidents from './residents/PlanetResidents';
 import NoPlanetSelected from './planet/NoPlanetSelected';

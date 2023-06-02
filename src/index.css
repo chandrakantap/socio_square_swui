@@ -58,4 +58,11 @@ body {
   button:disabled {
     @apply text-gray-500;
   }
+
+  .residentList {
+    @apply pl-6;
+  }
+  .residentList li {
+    @apply pl-4 border-l-2 border-l-green-600 mb-4;
+  }
 }

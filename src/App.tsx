@@ -1,6 +1,6 @@
 import { Provider } from 'react-redux';
 import { setupStore } from './store';
-import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import SWUIApp from 'modules/SWUIApp';
 
 const store = setupStore();

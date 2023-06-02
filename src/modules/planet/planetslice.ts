@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSelector, createSlice } from '@reduxjs/toolkit';
 import { EMPTY_ARRAY } from 'common/constants';
-import { API_CALL_STATUS, FetchPlanetsResponse, Planet } from 'common/types';
+import { API_CALL_STATUS, FetchPlanetsResponse } from 'common/types';
 
 export interface PlanetState {
   planets: FetchPlanetsResponse;

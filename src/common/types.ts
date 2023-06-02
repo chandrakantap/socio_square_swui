@@ -1,12 +1,12 @@
 export type API_CALL_STATUS = 'INIT' | 'LOADING' | 'SUCCESS' | 'ERROR';
 export interface Resident {
-  url: string;
+  name: string;
 }
 
 export interface Planet {
   name: string;
   url: string;
-  residents: Resident[];
+  residents: string[];
 }
 
 export interface FetchPlanetsResponse {

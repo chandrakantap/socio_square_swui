@@ -11,7 +11,7 @@ function PlanetList() {
 
   useEffect(() => {
     dispatch(fetchPlanets());
-  }, []);
+  }, [dispatch]);
 
   const { planetLoadStatus, planets } = useAppSelector((state) => state.planetSlice);
 
