@@ -1,11 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  font-family: 'Helvetica Neue', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 10px;
+  background-color: #374151;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #111827;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #111827;
+}
+
+/* mask closed positioned parent element*/
+.maskParent {
+  position: absolute;
+  inset: 0 0 0 0;
+}
+.button:before {
+  content: '';
+  display: inline-block;
+  height: 16px;
+  vertical-align: middle;
+}
+@layer components {
+  .listitem a {
+    @apply p-4 cursor-pointer hover:bg-bgsecondary;
+  }
+  .listitem a:hover,
+  .listitem a:focus,
+  .listitem:focus {
+    @apply bg-gray-900 outline-none;
+  }
+  .listitem a.active {
+    @apply bg-bgsecondary;
+  }
+  button:disabled {
+    @apply text-gray-500;
+  }
 }
